@@ -1,0 +1,302 @@
+/* Reset some default styles */
+html, body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+.anim {
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+}
+.anim2 {
+  width: 97.9%;
+  height: 30px;
+  max-width: 100%;
+  align-items: center;
+}
+.anim3 {
+  max-width: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center; /* Centers items vertically if needed */
+  max-width: 95%;
+  margin: 0 auto;
+  max-height: 150px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container2 {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.head1-one {
+  display: inline-block;
+  color: #000080;
+  
+  margin-right: 10px;
+}
+.img1-one {
+  display: inline-block;
+  max-height: 150px;
+  max-width: 65%; /* Ensure the image doesn't exceed the container width */
+  vertical-align: middle;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 10px 0;
+}
+
+nav li {
+  display: inline-flex;
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000080;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+article {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Header styles */
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation styles */
+nav ul {
+  background-color: transparent;
+}
+
+/* Main content styles */
+.news {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Video styles */
+.video-container {
+  position: relative;
+  padding-bottom: 30%; /* Adjust the aspect ratio to control the video height */
+  overflow: hidden;
+  margin-bottom: 20px; /* Add margin between videos */
+  max-width: 100%; /* Adjust video width to fit container */
+  height: auto; /* Adjust video height to maintain aspect ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Image gallery styles */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-gallery img {
+  flex: 0 1 calc(24% - 10px); /* Adjust the width of each image */
+    max-width: 100%; /* Ensure images don't exceed their container */
+    max-height: 250px; /* Set a maximum height for the images */
+    margin: 5px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  max-width: 300px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Events styles */
+.events {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.events li {
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  margin-bottom: 2%;
+  font-weight: bolder;
+  font-style:italic;
+  background-color: #333;
+  color: #0f0f0f;
+}
+/* Video grid styles */
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video-grid .video-container {
+  flex: 0 1 calc(33.33% - 20px); /* Three videos per row with spacing */
+}
+
+/* Contact form styles */
+.container3 {
+  display: flex;
+  justify-content:space-between; /* Create space between the "about me" section and the form */
+  margin-left: 5%;
+  margin-bottom: 2%;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 95%; /* Adjust the maximum width as needed */
+  padding: 20px;
+}
+.business {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  padding: 10px;
+  margin: 5px;
+  align-items: center;
+  border-right: 1px solid #e1e1e1;
+}
+.editI {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 calc(40% - 10px); /* Adjust the width of each image */
+    max-width: 100%; /* Ensure images don't exceed their container */
+    max-height: 250px; /* Set a maximum height for the images */
+    margin: 10px;
+    padding: 10px;
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Center horizontally within the div */
+  text-align: left; /* Center the text horizontally as well */
+  padding: 20px;
+  max-width: 30%;
+  border-right: 1px solid #e1e1e1;
+}
+
+.about-me img {
+  max-width: none; /* Ensure the image scales with its container width */
+  max-height: 200px; /* Set a maximum height for the image (adjust as needed) */
+  width: 70%; /* Let the width scale proportionally with the height */
+  height: auto; /* Let the height scale proportionally with the width */
+  margin: 0 auto; /* Center the image horizontally within the div */
+}
+
+.about-me p {
+  color: #333;
+  width: 90%; 
+  max-height: 100px; /* Set a maximum height for the paragraph (adjust as needed) */
+}
+.aboutme {
+  margin-top: 5px;
+  font-weight: bold;
+}
+form {
+  flex: 2; /* Take up available space on the right */
+  padding: 20px;
+}
+
+form h2 {
+  color: #333;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #e1e1e1;
+}
+.contactus {
+  margin-bottom: 10px;
+}
+form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
