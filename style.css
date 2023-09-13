@@ -131,23 +131,41 @@ nav ul {
 }
 
 /* Video styles */
+/* Video styles for larger screens (e.g., PC) */
+/* Video styles */
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .video-container {
-  position: relative;
-  padding-bottom: 30%; /* Adjust the aspect ratio to control the video height */
-  overflow: hidden;
-  margin-bottom: 20px; /* Add margin between videos */
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width based on your layout */
+  margin-bottom: 20px;
   max-width: 100%; /* Adjust video width to fit container */
-  height: auto; /* Adjust video height to maintain aspect ratio */
 }
 
 .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
+/* Media query for smaller screens (e.g., phone) */
+@media (max-width: 768px) {
+  .video-grid {
+    flex-direction: column; /* Stack videos vertically */
+  }
+}
+@media (max-width: 768px) {
+  .image-gallery {
+    flex-direction: column; /* Stack videos vertically */
+  }
+}
+@media (max-width: 768px) {
+  .container3 {
+    flex-direction: column; /* Stack videos vertically */
+  }
+}
 /* Image gallery styles */
 .image-gallery {
   display: flex;
@@ -204,9 +222,14 @@ footer {
 }
 
 /* Contact form styles */
+/* Contact form styles */
+
+/* Contact form styles */
+/* Contact form styles */
 .container3 {
   display: flex;
-  justify-content:space-between; /* Create space between the "about me" section and the form */
+  flex-wrap: wrap; /* Allow content to wrap to the next row */
+  justify-content: space-between; /* Create space between sections */
   margin-left: 5%;
   margin-bottom: 2%;
   background-color: #fff;
@@ -215,51 +238,30 @@ footer {
   max-width: 95%; /* Adjust the maximum width as needed */
   padding: 20px;
 }
-.business {
-  display: flex;
-  flex-direction: column;
-  max-width: 30%;
-  padding: 10px;
-  margin: 5px;
-  align-items: center;
-  border-right: 1px solid #e1e1e1;
-}
-.editI {
-  display: flex;
-  flex-direction: column;
-  flex: 0 1 calc(40% - 10px); /* Adjust the width of each image */
-    max-width: 100%; /* Ensure images don't exceed their container */
-    max-height: 250px; /* Set a maximum height for the images */
-    margin: 10px;
-    padding: 10px;
-}
-.about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: left; /* Center horizontally within the div */
-  text-align: left; /* Center the text horizontally as well */
-  padding: 20px;
-  max-width: 30%;
-  border-right: 1px solid #e1e1e1;
+
+.business,
+.editI,
+.about-me,
+form {
+  flex: 0 1 calc(50% - 20px); /* Take up half of the available width, adjust for margin */
+  margin: 5px 0; /* Add spacing between sections */
+  padding: 0 20px; /* Add horizontal padding to prevent full-width on larger screens */
+  box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .about-me img {
-  max-width: none; /* Ensure the image scales with its container width */
-  max-height: 200px; /* Set a maximum height for the image (adjust as needed) */
-  width: 70%; /* Let the width scale proportionally with the height */
-  height: auto; /* Let the height scale proportionally with the width */
-  margin: 0 auto; /* Center the image horizontally within the div */
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
+  display: block; /* Remove extra space beneath the image */
+  margin: 0 auto; /* Center the image horizontally */
+  max-height: 400px; /* Limit the maximum height of the image to your desired value */
 }
 
 .about-me p {
   color: #333;
-  width: 90%; 
-  max-height: 100px; /* Set a maximum height for the paragraph (adjust as needed) */
+  max-height: none; /* Remove the maximum height for paragraphs */
 }
-.aboutme {
-  margin-top: 5px;
-  font-weight: bold;
-}
+
 form {
   flex: 2; /* Take up available space on the right */
   padding: 20px;
