@@ -220,11 +220,6 @@ footer {
 .video-grid .video-container {
   flex: 0 1 calc(33.33% - 20px); /* Three videos per row with spacing */
 }
-
-/* Contact form styles */
-/* Contact form styles */
-
-/* Contact form styles */
 /* Contact form styles */
 .container3 {
   display: flex;
@@ -252,6 +247,8 @@ form {
 .about-me img {
   max-width: 100%; /* Ensure the image is responsive */
   height: auto;
+  align-items: center;
+  text-align: center;
   display: block; /* Remove extra space beneath the image */
   margin: 0 auto; /* Center the image horizontally */
   max-height: 400px; /* Limit the maximum height of the image to your desired value */
@@ -259,9 +256,22 @@ form {
 
 .about-me p {
   color: #333;
+  max-width: 100%;
+  text-align: left;
   max-height: none; /* Remove the maximum height for paragraphs */
 }
-
+@media (max-width: 768px) {
+  .business,
+  .editI,
+  .about-me,
+  form {
+    flex: 1; /* Equal width for all sections */
+    margin: 10px 0; /* Add more spacing between sections */
+    padding: 10px; /* Adjust padding for content spacing */
+    box-sizing: border-box;
+    text-align: center; /* Center text and content */
+  }
+}
 form {
   flex: 2; /* Take up available space on the right */
   padding: 20px;
