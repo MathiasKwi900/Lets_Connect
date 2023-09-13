@@ -225,15 +225,19 @@ footer {
   display: flex;
   flex-wrap: wrap; /* Allow content to wrap to the next row */
   justify-content: space-between; /* Create space between sections */
-  margin-left: 5%;
+  margin-left: 3.5%;
   margin-bottom: 2%;
   background-color: #fff;
   border: 1px solid #e1e1e1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 95%; /* Adjust the maximum width as needed */
+  max-width: 90%; /* Adjust the maximum width as needed */
   padding: 20px;
 }
+.editI {
+  width: 90%;
+  max-width: 100%;
 
+}
 .business,
 .editI,
 .about-me,
@@ -242,23 +246,23 @@ form {
   margin: 5px 0; /* Add spacing between sections */
   padding: 0 20px; /* Add horizontal padding to prevent full-width on larger screens */
   box-sizing: border-box; /* Include padding in the width calculation */
-  max-width: 80%;
 }
 
 .about-me img {
-  max-width: 80%; /* Ensure the image is responsive */
+  max-width: 100%; /* Ensure the image is responsive */
   height: auto;
+  width: 90%;
   align-items: center;
   text-align: center;
   display: block; /* Remove extra space beneath the image */
-  margin: 0 auto; /* Center the image horizontally */
   max-height: 400px; /* Limit the maximum height of the image to your desired value */
 }
 
 .about-me p {
   color: #333;
-  max-width: 80%;
+  max-width: 100%;
   text-align: left;
+  width: 90%;
   max-height: none; /* Remove the maximum height for paragraphs */
 }
 @media (max-width: 768px) {
@@ -270,7 +274,7 @@ form {
     margin: 10px 0; /* Add more spacing between sections */
     padding: 10px; /* Adjust padding for content spacing */
     box-sizing: border-box;
-    max-width: 80%;
+    width: 90%;
     text-align: center; /* Center text and content */
   }
 }
